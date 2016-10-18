@@ -1,0 +1,12 @@
+---
+driver:
+  name: vagrant
+vagrant:
+  platforms:
+    - name: centos7
+      box: centos/7
+  providers:
+    - name: virtualbox
+      type: virtualbox
+  instances:
+    - name: ansible-docker
