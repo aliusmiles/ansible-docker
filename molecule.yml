@@ -1,6 +1,7 @@
 ---
 driver:
   name: vagrant
+
 vagrant:
   platforms:
     - name: centos7
@@ -10,3 +11,6 @@ vagrant:
       type: virtualbox
   instances:
     - name: ansible-docker
+
+ansible:
+  requirements_file: requirements.yml
