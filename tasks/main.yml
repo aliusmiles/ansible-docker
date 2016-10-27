@@ -18,3 +18,11 @@
     name: docker
     state: started
     enabled: yes
+
+- name: Install docker python modules
+  pip:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - docker-py
+    - docker-compose
