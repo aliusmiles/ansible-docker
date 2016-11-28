@@ -12,5 +12,6 @@ vagrant:
   instances:
     - name: ansible-docker
 
-ansible:
+dependency:
+  name: galaxy
   requirements_file: requirements.yml
